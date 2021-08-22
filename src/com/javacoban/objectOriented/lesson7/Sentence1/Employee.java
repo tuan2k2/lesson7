@@ -1,12 +1,12 @@
 package com.javacoban.objectOriented.lesson7.Sentence1;
 
-public class Employee {
+public  abstract class Employee {
     private String name;
     private boolean gender;
     private int age;
     private String address;
 
-    public Employee(String name, boolean gender, int age, String address) {
+    public  Employee(String name, boolean gender, int age, String address) {
         this.name = name;
         this.gender = gender;
         this.age = age;
@@ -15,6 +15,7 @@ public class Employee {
 
     public Employee() {
     }
+    public abstract double calculateSalary();
     public String getName() {
         return name;
     }

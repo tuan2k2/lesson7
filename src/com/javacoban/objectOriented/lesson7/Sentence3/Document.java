@@ -1,5 +1,7 @@
 package com.javacoban.objectOriented.lesson7.Sentence3;
 
+import java.util.Scanner;
+
 public class Document {
     private String codeDocument;
     private String publishingCompany;
@@ -15,6 +17,8 @@ public class Document {
     }
 
     public String getCodeDocument() {
+        Scanner sc= new Scanner(System.in);
+        String a=sc.toString();
         return codeDocument;
     }
 

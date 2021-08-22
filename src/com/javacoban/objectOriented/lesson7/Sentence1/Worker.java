@@ -8,6 +8,14 @@ public class Worker extends Employee {
         this.factory = factory;
     }
 
+    public Worker() {
+    }
+
+    @Override
+    public double calculateSalary() {
+        return 3*10e6;
+    }
+
     public String getFactory() {
         return factory;
     }
